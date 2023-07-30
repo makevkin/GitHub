@@ -1,0 +1,84 @@
+1. На локальном репозитории сделать ветки для:
+- Postman
+  git branch Postman
+
+- Jmeter
+  git branch Jemetr
+
+- CheckList
+  git branch CheckList
+
+- Bag Reports
+  git branch Bag_Reports
+
+- SQL
+  git branch SQL
+
+- Charles
+  git branch Charles
+
+- Mobile testing
+  git branch Mobail_testing
+
+2. Запушить все ветки на внешний репозиторий
+  (git push origin --all) - но так лучше не делать
+  git push Postman
+  git push Jemetr
+  git push CheckList
+  git push Bag_reports
+  git push SQL
+  git push Charles
+  git push Mobile_testing
+
+3. В ветке Bag Reports сделать текстовый документ со структурой багрепорта 
+  git checkout Bag_reports
+  cat > bag_report.txt
+	ID
+	Project
+	Title
+	Severity
+	Priority
+	Environment
+	Steps
+	Expected Result
+	Actual result
+	Attachment
+	Author
+  ^C
+4. Запушить структуру багрепорта на внешний репозиторий
+  git add .
+  git commit -m "add Bag_report"
+  git push
+
+5. Вмержить ветку Bag Reports в Main
+  git branch main
+  git merge Bag_Reports
+
+6. Запушить Main  на внешний репозиторий
+  git push 
+
+7. В ветке CheckList набросать структуру чек листа
+  git checkout CheckList
+  cat > checklist.txt
+        ID
+	Project
+	Date
+	Author
+	Environment
+	TitleDiscription
+	Priority
+	Test
+	Expected Result
+	Status
+  ^C
+8. Запушить стркутуру на внешний репозиторий
+  git add .
+  git commit -m "add checklist"
+  git push -u origin CheckList
+  
+9. На внешнем репозитории сделать Pull request ветки Cheklist в Main
+
+10. Синхрогизировать Внешнюю и локальую ветку Main
+  git checkout main
+  git pull
+
