@@ -22,13 +22,13 @@
 
 2. Запушить все ветки на внешний репозиторий
   (git push origin --all) - но так лучше не делать
-  git push Postman
-  git push Jemetr
-  git push CheckList
-  git push Bag_reports
-  git push SQL
-  git push Charles
-  git push Mobile_testing
+  git push -u origin Postman
+  git push -u origin Jemetr
+  git push -u origin CheckList
+  git push -u origin Bag_reports
+  git push -u origin SQL
+  git push -u origin Charles
+  git push -u origin Mobile_testing
 
 3. В ветке Bag Reports сделать текстовый документ со структурой багрепорта 
   git checkout Bag_reports
